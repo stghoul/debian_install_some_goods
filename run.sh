@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #enabling root ssh login
 sed -i "s/.*PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config
