@@ -13,4 +13,4 @@ systemctl start rc-local
 
 #installing some useful stuff
 apt update
-apt install -y curl sudo
+apt install -y curl sudo net-tools
