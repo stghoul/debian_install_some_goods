@@ -14,8 +14,15 @@ systemctl start rc-local
 #installing some useful stuff
 apt update
 apt upgrade -y
-apt install -y curl sudo net-tools gnupg apt-transport-https
+apt install -y curl sudo net-tools
+
+#install powershell
+apt install -y gnupg apt-transport-https
 curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-bullseye-prod bullseye main" > /etc/apt/sources.list.d/microsoft.list'
 apt update
 apt install -y powershell
+
+
+#reboot
+reboot
